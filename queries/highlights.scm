@@ -128,8 +128,8 @@
 ; Color targets (fg, bg, fill, stroke, border-*)
 (europacss_color_target) @type
 
-; Variables ($lg, $mobile, etc.)
-(europacss_variable) @variable
+; Variables ($lg, $mobile, etc.) — always same color
+(europacss_variable) @variable.special
 
 ; Dotted names (body.foreground, link.hover.text)
 (europacss_dotted_name) @property
@@ -140,29 +140,61 @@
 ; Range values (->1023px, 1024px->1440px)
 (europacss_range) @number
 
-; Field-specific highlights for EuropaCSS values
+; --- @color field highlights ---
+
 (europacss_color
   value: (plain_value) @constant)
 
+(europacss_color
+  breakpoint: (plain_value) @variable)
+
+; --- @space field highlights ---
+
 (europacss_space
-  property: (plain_value) @property
+  property: (plain_value) @property)
+
+(europacss_space
   value: (plain_value) @number)
 
+(europacss_space
+  breakpoint: (plain_value) @variable)
+
+; --- @font field highlights ---
+
 (europacss_font
-  family: (plain_value) @string
+  family: (plain_value) @string)
+
+(europacss_font
   size: (plain_value) @number)
+
+(europacss_font
+  breakpoint: (plain_value) @variable)
+
+; --- @fontsize field highlights ---
 
 (europacss_fontsize
   size: (plain_value) @number)
 
+(europacss_fontsize
+  breakpoint: (plain_value) @variable)
+
+; --- @responsive / @mq field highlights ---
+
 (europacss_responsive
-  breakpoint: (plain_value) @constant)
+  breakpoint: (plain_value) @variable)
 
 (europacss_mq
   query: (plain_value) @constant)
 
+; --- @column field highlights ---
+
 (europacss_column
   value: (plain_value) @number)
+
+(europacss_column
+  breakpoint: (plain_value) @variable)
+
+; --- @display field highlights ---
 
 (europacss_display
   value: (plain_value) @constant)
