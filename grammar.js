@@ -82,7 +82,7 @@ module.exports = grammar(CSS, {
     europacss_space: $ =>
       seq(
         alias($._kw_space, $.europacss_keyword),
-        field('property', $._europacss_value),
+        field('property', $.plain_value),
         field('value', $._europacss_value),
         optional(field('breakpoint', $._europacss_value)),
         ';',
@@ -158,6 +158,7 @@ module.exports = grammar(CSS, {
         $.europacss_range,
         $.europacss_slash_value,
         $.europacss_dotted_name,
+        $.parenthesized_value,
         $.integer_value,
         $.float_value,
         $.plain_value,

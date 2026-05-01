@@ -2539,7 +2539,7 @@
           "name": "property",
           "content": {
             "type": "SYMBOL",
-            "name": "_europacss_value"
+            "name": "plain_value"
           }
         },
         {
@@ -2901,6 +2901,10 @@
         {
           "type": "SYMBOL",
           "name": "europacss_dotted_name"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "parenthesized_value"
         },
         {
           "type": "SYMBOL",

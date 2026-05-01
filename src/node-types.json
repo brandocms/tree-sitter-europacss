@@ -981,6 +981,10 @@
             "named": true
           },
           {
+            "type": "parenthesized_value",
+            "named": true
+          },
+          {
             "type": "plain_value",
             "named": true
           }
@@ -1022,6 +1026,10 @@
           },
           {
             "type": "integer_value",
+            "named": true
+          },
+          {
+            "type": "parenthesized_value",
             "named": true
           },
           {
@@ -1080,6 +1088,10 @@
             "named": true
           },
           {
+            "type": "parenthesized_value",
+            "named": true
+          },
+          {
             "type": "plain_value",
             "named": true
           }
@@ -1111,6 +1123,10 @@
           },
           {
             "type": "integer_value",
+            "named": true
+          },
+          {
+            "type": "parenthesized_value",
             "named": true
           },
           {
@@ -1164,6 +1180,10 @@
             "named": true
           },
           {
+            "type": "parenthesized_value",
+            "named": true
+          },
+          {
             "type": "plain_value",
             "named": true
           }
@@ -1214,6 +1234,10 @@
             "named": true
           },
           {
+            "type": "parenthesized_value",
+            "named": true
+          },
+          {
             "type": "plain_value",
             "named": true
           }
@@ -1248,6 +1272,10 @@
             "named": true
           },
           {
+            "type": "parenthesized_value",
+            "named": true
+          },
+          {
             "type": "plain_value",
             "named": true
           }
@@ -1279,6 +1307,10 @@
           },
           {
             "type": "integer_value",
+            "named": true
+          },
+          {
+            "type": "parenthesized_value",
             "named": true
           },
           {
@@ -1332,6 +1364,10 @@
             "named": true
           },
           {
+            "type": "parenthesized_value",
+            "named": true
+          },
+          {
             "type": "plain_value",
             "named": true
           }
@@ -1363,6 +1399,10 @@
           },
           {
             "type": "integer_value",
+            "named": true
+          },
+          {
+            "type": "parenthesized_value",
             "named": true
           },
           {
@@ -1431,6 +1471,10 @@
             "named": true
           },
           {
+            "type": "parenthesized_value",
+            "named": true
+          },
+          {
             "type": "plain_value",
             "named": true
           }
@@ -1496,6 +1540,10 @@
             "named": true
           },
           {
+            "type": "parenthesized_value",
+            "named": true
+          },
+          {
             "type": "plain_value",
             "named": true
           }
@@ -1543,6 +1591,10 @@
           },
           {
             "type": "integer_value",
+            "named": true
+          },
+          {
+            "type": "parenthesized_value",
             "named": true
           },
           {
@@ -1611,6 +1663,10 @@
             "named": true
           },
           {
+            "type": "parenthesized_value",
+            "named": true
+          },
+          {
             "type": "plain_value",
             "named": true
           }
@@ -1620,30 +1676,6 @@
         "multiple": false,
         "required": true,
         "types": [
-          {
-            "type": "europacss_dotted_name",
-            "named": true
-          },
-          {
-            "type": "europacss_range",
-            "named": true
-          },
-          {
-            "type": "europacss_slash_value",
-            "named": true
-          },
-          {
-            "type": "europacss_variable",
-            "named": true
-          },
-          {
-            "type": "float_value",
-            "named": true
-          },
-          {
-            "type": "integer_value",
-            "named": true
-          },
           {
             "type": "plain_value",
             "named": true
@@ -1676,6 +1708,10 @@
           },
           {
             "type": "integer_value",
+            "named": true
+          },
+          {
+            "type": "parenthesized_value",
             "named": true
           },
           {
@@ -1726,6 +1762,10 @@
           },
           {
             "type": "integer_value",
+            "named": true
+          },
+          {
+            "type": "parenthesized_value",
             "named": true
           },
           {
