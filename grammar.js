@@ -158,6 +158,8 @@ module.exports = grammar(CSS, {
         $.europacss_range,
         $.europacss_slash_value,
         $.europacss_dotted_name,
+        $.integer_value,
+        $.float_value,
         $.plain_value,
       ),
 
@@ -171,6 +173,7 @@ module.exports = grammar(CSS, {
     europacss_slash_value: _ => token(prec(1, /[\w-]+(?:\/[\w-]+)+/)),
 
     // Dot-separated names: body.foreground, link.hover.text
-    europacss_dotted_name: _ => token(prec(1, /[\w-]+(?:\.[\w-]+)+/)),
+    // Must start with a letter to avoid matching CSS values like 11.428vw
+    europacss_dotted_name: _ => token(prec(1, /[a-zA-Z][\w-]*(?:\.[\w-]+)+/)),
   },
 })
