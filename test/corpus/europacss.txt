@@ -1,0 +1,240 @@
+================================================================================
+Color rule
+================================================================================
+
+.test {
+  @color fg primary;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name
+          (identifier))))
+    (block
+      (europacss_color
+        target: (europacss_color_target)
+        value: (plain_value)))))
+
+================================================================================
+Color with dotted name
+================================================================================
+
+.test {
+  @color bg body.foreground;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name
+          (identifier))))
+    (block
+      (europacss_color
+        target: (europacss_color_target)
+        value: (europacss_dotted_name)))))
+
+================================================================================
+Space rule
+================================================================================
+
+.test {
+  @space margin-top md;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name
+          (identifier))))
+    (block
+      (europacss_space
+        property: (plain_value)
+        value: (plain_value)))))
+
+================================================================================
+Font rule
+================================================================================
+
+.test {
+  @font sans xl;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name
+          (identifier))))
+    (block
+      (europacss_font
+        family: (plain_value)
+        size: (plain_value)))))
+
+================================================================================
+Font size with slash value
+================================================================================
+
+.test {
+  @fontsize display/default;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name
+          (identifier))))
+    (block
+      (europacss_fontsize
+        size: (europacss_slash_value)))))
+
+================================================================================
+Responsive with variable
+================================================================================
+
+.test {
+  @responsive $lg {
+    @space padding md;
+  }
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name
+          (identifier))))
+    (block
+      (europacss_responsive
+        breakpoint: (europacss_variable)
+        (block
+          (europacss_space
+            property: (plain_value)
+            value: (plain_value)))))))
+
+================================================================================
+Media query with range
+================================================================================
+
+.test {
+  @mq 1024px->1440px {
+    color: green;
+  }
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name
+          (identifier))))
+    (block
+      (europacss_mq
+        query: (europacss_range)
+        (block
+          (declaration
+            (property_name)
+            (plain_value)))))))
+
+================================================================================
+Column with slash value
+================================================================================
+
+.test {
+  @column 3/12;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name
+          (identifier))))
+    (block
+      (europacss_column
+        value: (europacss_slash_value)))))
+
+================================================================================
+Display with slash value
+================================================================================
+
+.test {
+  @display flex/row/wrap;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name
+          (identifier))))
+    (block
+      (europacss_display
+        value: (europacss_slash_value)))))
+
+================================================================================
+Grid standalone
+================================================================================
+
+.test {
+  @grid;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name
+          (identifier))))
+    (block
+      (europacss_grid))))
+
+================================================================================
+Media query with open range
+================================================================================
+
+.test {
+  @mq ->1023px {
+    color: green;
+  }
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name
+          (identifier))))
+    (block
+      (europacss_mq
+        query: (europacss_range)
+        (block
+          (declaration
+            (property_name)
+            (plain_value)))))))

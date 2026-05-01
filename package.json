@@ -1,0 +1,39 @@
+{
+  "name": "tree-sitter-europacss",
+  "version": "1.0.0",
+  "description": "Tree-sitter grammar for EuropaCSS (CSS + EuropaCSS at-rules)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandocms/tree-sitter-europacss.git"
+  },
+  "main": "bindings/node",
+  "keywords": [
+    "tree-sitter",
+    "europacss",
+    "parser",
+    "css"
+  ],
+  "author": "Univers",
+  "license": "MIT",
+  "dependencies": {
+    "node-addon-api": "^8.0.0",
+    "node-gyp-build": "^4.8.0"
+  },
+  "peerDependencies": {
+    "tree-sitter": "^0.21.0"
+  },
+  "peerDependenciesMeta": {
+    "tree-sitter": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.24.0",
+    "tree-sitter-css": "^0.23.0"
+  },
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test",
+    "parse": "tree-sitter parse"
+  }
+}

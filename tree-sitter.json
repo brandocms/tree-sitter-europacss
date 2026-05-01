@@ -1,0 +1,38 @@
+{
+  "grammars": [
+    {
+      "name": "europacss",
+      "camelcase": "Europacss",
+      "scope": "source.europacss",
+      "path": ".",
+      "file-types": [
+        "css",
+        "pcss",
+        "postcss"
+      ],
+      "highlights": "queries/highlights.scm",
+      "injections": "queries/injections.scm"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "Tree-sitter grammar for EuropaCSS (CSS + EuropaCSS at-rules)",
+    "authors": [
+      {
+        "name": "Univers"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/brandocms/tree-sitter-europacss.git"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true
+  }
+}
