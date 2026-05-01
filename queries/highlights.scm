@@ -124,6 +124,11 @@
 
 ; EuropaCSS keywords (@color, @space!, @responsive, etc.)
 (europacss_keyword) @keyword
+(europacss_responsive "@responsive" @keyword)
+(europacss_mq "@mq" @keyword)
+(europacss_iterate "@iterate" @keyword)
+(europacss_unpack "@unpack" @keyword)
+(europacss_if "@if" @keyword)
 
 ; Color targets (fg, bg, fill, stroke, border-*)
 (europacss_color_target) @type
