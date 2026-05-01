@@ -129,7 +129,7 @@
 (europacss_color_target) @type
 
 ; Variables ($lg, $mobile, etc.) — always same color
-(europacss_variable) @variable.special
+(europacss_variable) @variable
 
 ; Dotted names (body.foreground, link.hover.text)
 (europacss_dotted_name) @property
