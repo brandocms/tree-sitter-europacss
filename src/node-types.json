@@ -949,6 +949,45 @@
     }
   },
   {
+    "type": "europacss_calc",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "europacss_slash_value",
+          "named": true
+        },
+        {
+          "type": "europacss_var_ref",
+          "named": true
+        },
+        {
+          "type": "europacss_variable",
+          "named": true
+        },
+        {
+          "type": "float_value",
+          "named": true
+        },
+        {
+          "type": "integer_value",
+          "named": true
+        },
+        {
+          "type": "parenthesized_value",
+          "named": true
+        },
+        {
+          "type": "plain_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "europacss_color",
     "named": true,
     "fields": {
@@ -956,6 +995,10 @@
         "multiple": false,
         "required": false,
         "types": [
+          {
+            "type": "europacss_calc",
+            "named": true
+          },
           {
             "type": "europacss_dotted_name",
             "named": true
@@ -1004,6 +1047,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "europacss_calc",
+            "named": true
+          },
           {
             "type": "europacss_dotted_name",
             "named": true
@@ -1064,6 +1111,10 @@
         "required": false,
         "types": [
           {
+            "type": "europacss_calc",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1101,6 +1152,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "europacss_calc",
+            "named": true
+          },
           {
             "type": "europacss_dotted_name",
             "named": true
@@ -1156,6 +1211,10 @@
         "required": true,
         "types": [
           {
+            "type": "europacss_calc",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1210,6 +1269,10 @@
         "required": false,
         "types": [
           {
+            "type": "europacss_calc",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1248,6 +1311,10 @@
         "required": true,
         "types": [
           {
+            "type": "europacss_calc",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1285,6 +1352,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "europacss_calc",
+            "named": true
+          },
           {
             "type": "europacss_dotted_name",
             "named": true
@@ -1340,6 +1411,10 @@
         "required": false,
         "types": [
           {
+            "type": "europacss_calc",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1377,6 +1452,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "europacss_calc",
+            "named": true
+          },
           {
             "type": "europacss_dotted_name",
             "named": true
@@ -1447,6 +1526,10 @@
         "required": true,
         "types": [
           {
+            "type": "europacss_calc",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1516,6 +1599,10 @@
         "required": true,
         "types": [
           {
+            "type": "europacss_calc",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1569,6 +1656,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "europacss_calc",
+            "named": true
+          },
           {
             "type": "europacss_dotted_name",
             "named": true
@@ -1639,6 +1730,10 @@
         "required": false,
         "types": [
           {
+            "type": "europacss_calc",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1686,6 +1781,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "europacss_calc",
+            "named": true
+          },
           {
             "type": "europacss_dotted_name",
             "named": true
@@ -1741,6 +1840,10 @@
         "required": true,
         "types": [
           {
+            "type": "europacss_calc",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1766,6 +1869,26 @@
           },
           {
             "type": "parenthesized_value",
+            "named": true
+          },
+          {
+            "type": "plain_value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "europacss_var_ref",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "europacss_slash_value",
             "named": true
           },
           {
@@ -3066,6 +3189,10 @@
     "named": false
   },
   {
+    "type": "calc",
+    "named": false
+  },
+  {
     "type": "comment",
     "named": true
   },
@@ -3192,6 +3319,10 @@
   {
     "type": "unit",
     "named": true
+  },
+  {
+    "type": "var",
+    "named": false
   },
   {
     "type": "{",

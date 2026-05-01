@@ -2896,6 +2896,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "europacss_calc"
+        },
+        {
+          "type": "SYMBOL",
           "name": "europacss_slash_value"
         },
         {
@@ -2917,6 +2921,113 @@
         {
           "type": "SYMBOL",
           "name": "plain_value"
+        }
+      ]
+    },
+    "europacss_calc": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "calc"
+        },
+        {
+          "type": "STRING",
+          "value": "("
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "europacss_var_ref"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "integer_value"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "float_value"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "plain_value"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "europacss_variable"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "europacss_slash_value"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "parenthesized_value"
+              },
+              {
+                "type": "STRING",
+                "value": "*"
+              },
+              {
+                "type": "STRING",
+                "value": "+"
+              },
+              {
+                "type": "STRING",
+                "value": "-"
+              },
+              {
+                "type": "STRING",
+                "value": "/"
+              },
+              {
+                "type": "STRING",
+                "value": ","
+              }
+            ]
+          }
+        },
+        {
+          "type": "STRING",
+          "value": ")"
+        }
+      ]
+    },
+    "europacss_var_ref": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "var"
+        },
+        {
+          "type": "STRING",
+          "value": "["
+        },
+        {
+          "type": "FIELD",
+          "name": "name",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "plain_value"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "europacss_slash_value"
+              }
+            ]
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "]"
         }
       ]
     },

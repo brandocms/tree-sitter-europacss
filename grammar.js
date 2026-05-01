@@ -156,12 +156,41 @@ module.exports = grammar(CSS, {
       choice(
         $.europacss_variable,
         $.europacss_range,
+        $.europacss_calc,
         $.europacss_slash_value,
         $.europacss_dotted_name,
         $.parenthesized_value,
         $.integer_value,
         $.float_value,
         $.plain_value,
+      ),
+
+    // calc() expressions — handles EuropaCSS var[name] syntax inside
+    europacss_calc: $ =>
+      seq(
+        'calc',
+        '(',
+        repeat(choice(
+          $.europacss_var_ref,
+          $.integer_value,
+          $.float_value,
+          $.plain_value,
+          $.europacss_variable,
+          $.europacss_slash_value,
+          $.parenthesized_value,
+          '*', '+', '-', '/',
+          ',',
+        )),
+        ')',
+      ),
+
+    // var[name] — EuropaCSS config variable reference
+    europacss_var_ref: $ =>
+      seq(
+        'var',
+        '[',
+        field('name', choice($.plain_value, $.europacss_slash_value)),
+        ']',
       ),
 
     // Breakpoint collection variables: $lg, $mobile, $desktop

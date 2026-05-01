@@ -140,6 +140,16 @@
 ; Range values (->1023px, 1024px->1440px)
 (europacss_range) @number
 
+; calc() keyword
+(europacss_calc "calc" @function)
+
+; var[name] references
+(europacss_var_ref "var" @function)
+(europacss_var_ref
+  name: (plain_value) @variable.special)
+(europacss_var_ref
+  name: (europacss_slash_value) @variable.special)
+
 ; --- @color field highlights ---
 
 (europacss_color
