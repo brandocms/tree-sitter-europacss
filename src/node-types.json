@@ -936,7 +936,17 @@
   {
     "type": "europacss_abs100",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "europacss_keyword",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "europacss_color",
@@ -1004,6 +1014,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "europacss_keyword",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -1067,6 +1087,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "europacss_keyword",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -1099,6 +1129,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "europacss_keyword",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -1183,6 +1223,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "europacss_keyword",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -1241,12 +1291,32 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "europacss_keyword",
+          "named": true
+        }
+      ]
     }
   },
   {
     "type": "europacss_grid",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "europacss_keyword",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "europacss_if",
@@ -1392,7 +1462,17 @@
   {
     "type": "europacss_row",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "europacss_keyword",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "europacss_space",
@@ -1476,6 +1556,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "europacss_keyword",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -2712,35 +2802,7 @@
     "named": false
   },
   {
-    "type": "@abs100",
-    "named": false
-  },
-  {
     "type": "@charset",
-    "named": false
-  },
-  {
-    "type": "@color",
-    "named": false
-  },
-  {
-    "type": "@column",
-    "named": false
-  },
-  {
-    "type": "@display",
-    "named": false
-  },
-  {
-    "type": "@font",
-    "named": false
-  },
-  {
-    "type": "@fontsize",
-    "named": false
-  },
-  {
-    "type": "@grid",
     "named": false
   },
   {
@@ -2773,14 +2835,6 @@
   },
   {
     "type": "@responsive",
-    "named": false
-  },
-  {
-    "type": "@row",
-    "named": false
-  },
-  {
-    "type": "@space",
     "named": false
   },
   {
@@ -2845,6 +2899,10 @@
   },
   {
     "type": "europacss_dotted_name",
+    "named": true
+  },
+  {
+    "type": "europacss_keyword",
     "named": true
   },
   {

@@ -16,6 +16,7 @@ Color rule
           (identifier))))
     (block
       (europacss_color
+        (europacss_keyword)
         target: (europacss_color_target)
         value: (plain_value)))))
 
@@ -37,6 +38,7 @@ Color with dotted name
           (identifier))))
     (block
       (europacss_color
+        (europacss_keyword)
         target: (europacss_color_target)
         value: (europacss_dotted_name)))))
 
@@ -58,6 +60,29 @@ Space rule
           (identifier))))
     (block
       (europacss_space
+        (europacss_keyword)
+        property: (plain_value)
+        value: (plain_value)))))
+
+================================================================================
+Space with important
+================================================================================
+
+.test {
+  @space! margin-top md;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name
+          (identifier))))
+    (block
+      (europacss_space
+        (europacss_keyword)
         property: (plain_value)
         value: (plain_value)))))
 
@@ -79,6 +104,7 @@ Font rule
           (identifier))))
     (block
       (europacss_font
+        (europacss_keyword)
         family: (plain_value)
         size: (plain_value)))))
 
@@ -100,6 +126,7 @@ Font size with slash value
           (identifier))))
     (block
       (europacss_fontsize
+        (europacss_keyword)
         size: (europacss_slash_value)))))
 
 ================================================================================
@@ -125,6 +152,7 @@ Responsive with variable
         breakpoint: (europacss_variable)
         (block
           (europacss_space
+            (europacss_keyword)
             property: (plain_value)
             value: (plain_value)))))))
 
@@ -172,6 +200,7 @@ Column with slash value
           (identifier))))
     (block
       (europacss_column
+        (europacss_keyword)
         value: (europacss_slash_value)))))
 
 ================================================================================
@@ -192,6 +221,7 @@ Display with slash value
           (identifier))))
     (block
       (europacss_display
+        (europacss_keyword)
         value: (europacss_slash_value)))))
 
 ================================================================================
@@ -211,7 +241,8 @@ Grid standalone
         (class_name
           (identifier))))
     (block
-      (europacss_grid))))
+      (europacss_grid
+        (europacss_keyword)))))
 
 ================================================================================
 Media query with open range
@@ -238,3 +269,23 @@ Media query with open range
           (declaration
             (property_name)
             (plain_value)))))))
+
+================================================================================
+Abs100 with important
+================================================================================
+
+.test {
+  @abs100!;
+}
+
+--------------------------------------------------------------------------------
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name
+          (identifier))))
+    (block
+      (europacss_abs100
+        (europacss_keyword)))))
