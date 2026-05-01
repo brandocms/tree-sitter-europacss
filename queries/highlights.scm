@@ -129,7 +129,7 @@
 (europacss_color_target) @type
 
 ; Variables ($lg, $mobile, etc.) — always same color
-(europacss_variable) @variable
+(europacss_variable) @variable.special
 
 ; Dotted names (body.foreground, link.hover.text)
 (europacss_dotted_name) @property
@@ -146,7 +146,7 @@
   value: (plain_value) @constant)
 
 (europacss_color
-  breakpoint: (plain_value) @variable)
+  breakpoint: (plain_value) @variable.special)
 
 ; --- @space field highlights ---
 
@@ -157,7 +157,7 @@
   value: (plain_value) @number)
 
 (europacss_space
-  breakpoint: (plain_value) @variable)
+  breakpoint: (plain_value) @variable.special)
 
 ; --- @font field highlights ---
 
@@ -168,7 +168,7 @@
   size: (plain_value) @number)
 
 (europacss_font
-  breakpoint: (plain_value) @variable)
+  breakpoint: (plain_value) @variable.special)
 
 ; --- @fontsize field highlights ---
 
@@ -176,12 +176,12 @@
   size: (plain_value) @number)
 
 (europacss_fontsize
-  breakpoint: (plain_value) @variable)
+  breakpoint: (plain_value) @variable.special)
 
 ; --- @responsive / @mq field highlights ---
 
 (europacss_responsive
-  breakpoint: (plain_value) @variable)
+  breakpoint: (plain_value) @variable.special)
 
 (europacss_mq
   query: (plain_value) @constant)
@@ -192,7 +192,7 @@
   value: (plain_value) @number)
 
 (europacss_column
-  breakpoint: (plain_value) @variable)
+  breakpoint: (plain_value) @variable.special)
 
 ; --- @display field highlights ---
 
