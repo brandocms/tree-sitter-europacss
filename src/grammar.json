@@ -2892,6 +2892,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "europacss_comparison"
+        },
+        {
+          "type": "SYMBOL",
           "name": "europacss_range"
         },
         {
@@ -2923,6 +2927,17 @@
           "name": "plain_value"
         }
       ]
+    },
+    "europacss_comparison": {
+      "type": "TOKEN",
+      "content": {
+        "type": "PREC",
+        "value": 2,
+        "content": {
+          "type": "PATTERN",
+          "value": "[<>]=?[\\w-]+"
+        }
+      }
     },
     "europacss_calc": {
       "type": "SEQ",

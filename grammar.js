@@ -155,6 +155,7 @@ module.exports = grammar(CSS, {
     _europacss_value: $ =>
       choice(
         $.europacss_variable,
+        $.europacss_comparison,
         $.europacss_range,
         $.europacss_calc,
         $.europacss_slash_value,
@@ -164,6 +165,9 @@ module.exports = grammar(CSS, {
         $.float_value,
         $.plain_value,
       ),
+
+    // Comparison breakpoints: >=desktop_lg, <=mobile, >ipad_portrait, <desktop_md
+    europacss_comparison: _ => token(prec(2, /[<>]=?[\w-]+/)),
 
     // calc() expressions — handles EuropaCSS var[name] syntax inside
     europacss_calc: $ =>

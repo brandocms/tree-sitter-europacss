@@ -136,6 +136,9 @@
 ; Variables ($lg, $mobile, etc.) — always same color
 (europacss_variable) @variable.special
 
+; Comparison breakpoints (>=desktop_lg, <=mobile, etc.)
+(europacss_comparison) @variable.special
+
 ; Dotted names (body.foreground, link.hover.text)
 (europacss_dotted_name) @property
 

@@ -1000,6 +1000,10 @@
             "named": true
           },
           {
+            "type": "europacss_comparison",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1049,6 +1053,10 @@
         "types": [
           {
             "type": "europacss_calc",
+            "named": true
+          },
+          {
+            "type": "europacss_comparison",
             "named": true
           },
           {
@@ -1115,6 +1123,10 @@
             "named": true
           },
           {
+            "type": "europacss_comparison",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1154,6 +1166,10 @@
         "types": [
           {
             "type": "europacss_calc",
+            "named": true
+          },
+          {
+            "type": "europacss_comparison",
             "named": true
           },
           {
@@ -1215,6 +1231,10 @@
             "named": true
           },
           {
+            "type": "europacss_comparison",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1273,6 +1293,10 @@
             "named": true
           },
           {
+            "type": "europacss_comparison",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1315,6 +1339,10 @@
             "named": true
           },
           {
+            "type": "europacss_comparison",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1354,6 +1382,10 @@
         "types": [
           {
             "type": "europacss_calc",
+            "named": true
+          },
+          {
+            "type": "europacss_comparison",
             "named": true
           },
           {
@@ -1415,6 +1447,10 @@
             "named": true
           },
           {
+            "type": "europacss_comparison",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1454,6 +1490,10 @@
         "types": [
           {
             "type": "europacss_calc",
+            "named": true
+          },
+          {
+            "type": "europacss_comparison",
             "named": true
           },
           {
@@ -1530,6 +1570,10 @@
             "named": true
           },
           {
+            "type": "europacss_comparison",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1603,6 +1647,10 @@
             "named": true
           },
           {
+            "type": "europacss_comparison",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1658,6 +1706,10 @@
         "types": [
           {
             "type": "europacss_calc",
+            "named": true
+          },
+          {
+            "type": "europacss_comparison",
             "named": true
           },
           {
@@ -1734,6 +1786,10 @@
             "named": true
           },
           {
+            "type": "europacss_comparison",
+            "named": true
+          },
+          {
             "type": "europacss_dotted_name",
             "named": true
           },
@@ -1783,6 +1839,10 @@
         "types": [
           {
             "type": "europacss_calc",
+            "named": true
+          },
+          {
+            "type": "europacss_comparison",
             "named": true
           },
           {
@@ -1841,6 +1901,10 @@
         "types": [
           {
             "type": "europacss_calc",
+            "named": true
+          },
+          {
+            "type": "europacss_comparison",
             "named": true
           },
           {
@@ -3198,6 +3262,10 @@
   },
   {
     "type": "escape_sequence",
+    "named": true
+  },
+  {
+    "type": "europacss_comparison",
     "named": true
   },
   {
