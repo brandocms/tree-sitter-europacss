@@ -203,8 +203,8 @@ module.exports = grammar(CSS, {
     // Range values: ->1023px, 1024px->1440px, 1441px->
     europacss_range: _ => token(prec(1, /[\w.]+->[\w.]*|->[\w.]+/)),
 
-    // Slash-separated values: 3/12, flex/row/wrap, display/default
-    europacss_slash_value: _ => token(prec(1, /[\w-]+(?:\/[\w-]+)+/)),
+    // Slash-separated values: 3/12, flex/row/wrap, display/default, 20px/120%
+    europacss_slash_value: _ => token(prec(1, /[\w%-]+(?:\/[\w%-]+)+/)),
 
     // Dot-separated names: body.foreground, link.hover.text
     // Must start with a letter to avoid matching CSS values like 11.428vw
