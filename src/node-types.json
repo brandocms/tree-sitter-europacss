@@ -505,6 +505,10 @@
           "named": true
         },
         {
+          "type": "europacss_column_offset",
+          "named": true
+        },
+        {
           "type": "europacss_display",
           "named": true
         },
@@ -1112,6 +1116,114 @@
   },
   {
     "type": "europacss_column",
+    "named": true,
+    "fields": {
+      "breakpoint": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "europacss_calc",
+            "named": true
+          },
+          {
+            "type": "europacss_comparison",
+            "named": true
+          },
+          {
+            "type": "europacss_dotted_name",
+            "named": true
+          },
+          {
+            "type": "europacss_range",
+            "named": true
+          },
+          {
+            "type": "europacss_slash_value",
+            "named": true
+          },
+          {
+            "type": "europacss_variable",
+            "named": true
+          },
+          {
+            "type": "float_value",
+            "named": true
+          },
+          {
+            "type": "integer_value",
+            "named": true
+          },
+          {
+            "type": "parenthesized_value",
+            "named": true
+          },
+          {
+            "type": "plain_value",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "europacss_calc",
+            "named": true
+          },
+          {
+            "type": "europacss_comparison",
+            "named": true
+          },
+          {
+            "type": "europacss_dotted_name",
+            "named": true
+          },
+          {
+            "type": "europacss_range",
+            "named": true
+          },
+          {
+            "type": "europacss_slash_value",
+            "named": true
+          },
+          {
+            "type": "europacss_variable",
+            "named": true
+          },
+          {
+            "type": "float_value",
+            "named": true
+          },
+          {
+            "type": "integer_value",
+            "named": true
+          },
+          {
+            "type": "parenthesized_value",
+            "named": true
+          },
+          {
+            "type": "plain_value",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "europacss_keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "europacss_column_offset",
     "named": true,
     "fields": {
       "breakpoint": {

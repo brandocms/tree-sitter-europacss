@@ -175,6 +175,9 @@
   value: (plain_value) @number)
 
 (europacss_space
+  value: (europacss_dotted_name) @number)
+
+(europacss_space
   breakpoint: (plain_value) @variable.special)
 
 ; --- @font field highlights ---
@@ -186,12 +189,18 @@
   size: (plain_value) @number)
 
 (europacss_font
+  size: (europacss_dotted_name) @number)
+
+(europacss_font
   breakpoint: (plain_value) @variable.special)
 
 ; --- @fontsize field highlights ---
 
 (europacss_fontsize
   size: (plain_value) @number)
+
+(europacss_fontsize
+  size: (europacss_dotted_name) @number)
 
 (europacss_fontsize
   breakpoint: (plain_value) @variable.special)
@@ -210,6 +219,14 @@
   value: (plain_value) @number)
 
 (europacss_column
+  breakpoint: (plain_value) @variable.special)
+
+; --- @column-offset field highlights ---
+
+(europacss_column_offset
+  value: (plain_value) @number)
+
+(europacss_column_offset
   breakpoint: (plain_value) @variable.special)
 
 ; --- @display field highlights ---

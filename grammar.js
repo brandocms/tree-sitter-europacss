@@ -31,6 +31,7 @@ module.exports = grammar(CSS, {
         $.europacss_responsive,
         $.europacss_mq,
         $.europacss_column,
+        $.europacss_column_offset,
         $.europacss_display,
         $.europacss_grid,
         $.europacss_row,
@@ -48,6 +49,7 @@ module.exports = grammar(CSS, {
     _kw_font: _ => token(prec(5, /@font!?/)),
     _kw_fontsize: _ => token(prec(5, /@fontsize!?/)),
     _kw_column: _ => token(prec(5, /@column!?/)),
+    _kw_column_offset: _ => token(prec(6, /@column-offset!?/)),
     _kw_display: _ => token(prec(5, /@display!?/)),
     _kw_grid: _ => token(prec(5, /@grid!?/)),
     _kw_row: _ => token(prec(5, /@row!?/)),
@@ -118,6 +120,15 @@ module.exports = grammar(CSS, {
     europacss_column: $ =>
       seq(
         alias($._kw_column, $.europacss_keyword),
+        field('value', $._europacss_value),
+        optional(field('breakpoint', $._europacss_value)),
+        ';',
+      ),
+
+    // @column-offset[!] <value> [breakpoint];
+    europacss_column_offset: $ =>
+      seq(
+        alias($._kw_column_offset, $.europacss_keyword),
         field('value', $._europacss_value),
         optional(field('breakpoint', $._europacss_value)),
         ';',
