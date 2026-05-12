@@ -575,64 +575,73 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "universal_selector"
+          "name": "europacss_placeholder_selector"
         },
         {
-          "type": "ALIAS",
-          "content": {
-            "type": "SYMBOL",
-            "name": "identifier"
-          },
-          "named": true,
-          "value": "tag_name"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "class_selector"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "nesting_selector"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "pseudo_class_selector"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "pseudo_element_selector"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "id_selector"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "attribute_selector"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "string_value"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "child_selector"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "descendant_selector"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "sibling_selector"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "adjacent_sibling_selector"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "namespace_selector"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "universal_selector"
+            },
+            {
+              "type": "ALIAS",
+              "content": {
+                "type": "SYMBOL",
+                "name": "identifier"
+              },
+              "named": true,
+              "value": "tag_name"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "class_selector"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "nesting_selector"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "pseudo_class_selector"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "pseudo_element_selector"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "id_selector"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "attribute_selector"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "string_value"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "child_selector"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "descendant_selector"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "sibling_selector"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "adjacent_sibling_selector"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "namespace_selector"
+            }
+          ]
         }
       ]
     },
@@ -2335,6 +2344,24 @@
           }
         ]
       }
+    },
+    "europacss_placeholder_selector": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "%"
+        },
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "SYMBOL",
+            "name": "identifier"
+          },
+          "named": true,
+          "value": "placeholder_name"
+        }
+      ]
     },
     "_kw_color": {
       "type": "TOKEN",

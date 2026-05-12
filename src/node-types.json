@@ -28,6 +28,10 @@
           "named": true
         },
         {
+          "type": "europacss_placeholder_selector",
+          "named": true
+        },
+        {
           "type": "id_selector",
           "named": true
         },
@@ -104,6 +108,10 @@
         },
         {
           "type": "descendant_selector",
+          "named": true
+        },
+        {
+          "type": "europacss_placeholder_selector",
           "named": true
         },
         {
@@ -241,6 +249,10 @@
           "named": true
         },
         {
+          "type": "europacss_placeholder_selector",
+          "named": true
+        },
+        {
           "type": "id_selector",
           "named": true
         },
@@ -321,6 +333,10 @@
         },
         {
           "type": "descendant_selector",
+          "named": true
+        },
+        {
+          "type": "europacss_placeholder_selector",
           "named": true
         },
         {
@@ -682,6 +698,10 @@
           "named": true
         },
         {
+          "type": "europacss_placeholder_selector",
+          "named": true
+        },
+        {
           "type": "id_selector",
           "named": true
         },
@@ -769,6 +789,10 @@
         },
         {
           "type": "descendant_selector",
+          "named": true
+        },
+        {
+          "type": "europacss_placeholder_selector",
           "named": true
         },
         {
@@ -896,6 +920,10 @@
         },
         {
           "type": "descendant_selector",
+          "named": true
+        },
+        {
+          "type": "europacss_placeholder_selector",
           "named": true
         },
         {
@@ -1809,6 +1837,21 @@
     }
   },
   {
+    "type": "europacss_placeholder_selector",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "placeholder_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "europacss_responsive",
     "named": true,
     "fields": {
@@ -2225,6 +2268,10 @@
           "named": true
         },
         {
+          "type": "europacss_placeholder_selector",
+          "named": true
+        },
+        {
           "type": "id_name",
           "named": true
         },
@@ -2490,6 +2537,10 @@
           "named": true
         },
         {
+          "type": "europacss_placeholder_selector",
+          "named": true
+        },
+        {
           "type": "id_selector",
           "named": true
         },
@@ -2729,6 +2780,10 @@
           "named": true
         },
         {
+          "type": "europacss_placeholder_selector",
+          "named": true
+        },
+        {
           "type": "id_selector",
           "named": true
         },
@@ -2797,6 +2852,10 @@
         },
         {
           "type": "descendant_selector",
+          "named": true
+        },
+        {
+          "type": "europacss_placeholder_selector",
           "named": true
         },
         {
@@ -2886,6 +2945,10 @@
           "named": true
         },
         {
+          "type": "europacss_placeholder_selector",
+          "named": true
+        },
+        {
           "type": "id_selector",
           "named": true
         },
@@ -2953,6 +3016,10 @@
           "named": true
         },
         {
+          "type": "europacss_placeholder_selector",
+          "named": true
+        },
+        {
           "type": "id_selector",
           "named": true
         },
@@ -3017,6 +3084,10 @@
         },
         {
           "type": "descendant_selector",
+          "named": true
+        },
+        {
+          "type": "europacss_placeholder_selector",
           "named": true
         },
         {
@@ -3214,6 +3285,10 @@
   },
   {
     "type": "$=",
+    "named": false
+  },
+  {
+    "type": "%",
     "named": false
   },
   {
@@ -3467,6 +3542,10 @@
   {
     "type": "or",
     "named": false
+  },
+  {
+    "type": "placeholder_name",
+    "named": true
   },
   {
     "type": "plain_value",

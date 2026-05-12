@@ -42,6 +42,17 @@ module.exports = grammar(CSS, {
         original,
       ),
 
+    // Extend selectors with EuropaCSS placeholder selector (%name)
+    _selector: ($, original) =>
+      choice(
+        $.europacss_placeholder_selector,
+        original,
+      ),
+
+    // %placeholder-name — EuropaCSS partial/placeholder selector
+    europacss_placeholder_selector: $ =>
+      seq('%', alias($.identifier, $.placeholder_name)),
+
     // --- EuropaCSS keyword tokens (all support optional ! suffix) ---
 
     _kw_color: _ => token(prec(5, /@color!?/)),

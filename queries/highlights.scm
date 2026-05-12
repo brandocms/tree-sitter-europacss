@@ -122,6 +122,12 @@
 
 ; === EuropaCSS highlights ===
 
+; Placeholder/partial selectors (%link-inverted)
+(europacss_placeholder_selector
+  "%" @punctuation.delimiter)
+(europacss_placeholder_selector
+  (placeholder_name) @selector.class)
+
 ; EuropaCSS keywords (@color, @space!, @responsive, etc.)
 (europacss_keyword) @keyword
 (europacss_responsive "@responsive" @keyword)
